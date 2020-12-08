@@ -45,8 +45,21 @@ Onboarding must be thoroughly completed and must include the following, but is n
 * White List
 * Black List
 
-## Usage
+## Process
+The over-all schema of the software runs off of a TFX pipeline. a TFX pipeline is a sequence of components that implement an ML pipeline which is specifically designed for scalable, high-performance machine learning tasks.
 
+Stage  | Description
+------------- | -------------
+Research  | Multiple iterations, with parameters set from the Onboarding Process, ingest and validate large quantities of data including hundreds if not thousands of data-points / post.
+Agent Account  | Agent Accounts, combine the power of the ( Research Stage ), as well as the onboarding parameters, to indirectly build an audience of the most-engaged users to 
+put them through the ranks.
+Collaboration  | After the Users have been incubated and qualified for the clients end-goal, Collaboration with the Agent Account and the Client Account begins. 
+
+
+* To insure a steady growth, the longer the alogrithm runs on a client, the faster the account will grow. *
+
+## Usage
+The Software is always adapting & growing so the algorithms change depending on Instagrams Algorithms, 3rd party Applications and Software may be used to aid the growth of an account. DeepTurn Ltd Provides no warranty, no protection in preparation or during the use of the Service. 
 
 
 ## License
