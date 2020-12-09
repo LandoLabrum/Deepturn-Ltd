@@ -28,7 +28,8 @@ Latest commit 7abb884 14 seconds ago
  History
  1 contributor
 22 lines (15 sloc)  555 Bytes
- <btn>hi</btn>
+ [button url="http://www.google.com"]
+
 # DeepTurn Ltd - Social Automation
 
 The following is a basic analysis over the functionality and schema of the Social Automation product.
