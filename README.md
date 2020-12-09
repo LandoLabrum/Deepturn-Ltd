@@ -29,9 +29,6 @@ Latest commit 7abb884 14 seconds ago
  1 contributor
 22 lines (15 sloc)  555 Bytes
 
-[Link button](http://example.com/){: .btn }
-
-
 # DeepTurn Ltd - Social Automation
 
 The following is a basic analysis over the functionality and schema of the Social Automation product.
