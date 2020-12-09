@@ -28,7 +28,8 @@ Latest commit 7abb884 14 seconds ago
  History
  1 contributor
 22 lines (15 sloc)  555 Bytes
- [button url="http://www.google.com"]
+
+<button name="button">Click me</button>
 
 # DeepTurn Ltd - Social Automation
 
