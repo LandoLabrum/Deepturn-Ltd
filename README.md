@@ -29,7 +29,33 @@ Latest commit 7abb884 14 seconds ago
  1 contributor
 22 lines (15 sloc)  555 Bytes
 
-<button name="button">Click me</button>
+{% extends "forms/field.html.twig" %}
+
+{% block input %}
+    <div class="form-textarea-wrapper {{ field.size }}">
+        <textarea
+            {# required attribute structures #}
+            name="{{ (scope ~ field.name)|fieldName }}"
+            {# input attribute structures #}
+            {% block input_attributes %}
+                {% if field.classes is defined %}class="materialize-textarea {{ field.classes }}" {% else %}class="materialize-textarea {{ field.classes|default('input') }}" {% endif %}
+                {% if field.id is defined %}id="{{ field.id|e }}" {% endif %}
+                {% if field.style is defined %}style="{{ field.style|e }}" {% endif %}
+                {% if field.disabled or isDisabledToggleable %}disabled="disabled"{% endif %}
+                {% if field.placeholder %}placeholder="{{ field.placeholder|t }}"{% endif %}
+                {% if field.autofocus in ['on', 'true', 1] %}autofocus="autofocus"{% endif %}
+                {% if field.novalidate in ['on', 'true', 1] %}novalidate="novalidate"{% endif %}
+                {% if field.readonly in ['on', 'true', 1] %}readonly="readonly"{% endif %}
+                {% if field.autocomplete in ['on', 'off'] %}autocomplete="{{ field.autocomplete }}"{% endif %}
+                {% if field.validate.required in ['on', 'true', 1] %}required="required"{% endif %}
+                {% if field.validate.pattern %}pattern="{{ field.validate.pattern }}"{% endif %}
+                {% if field.validate.message %}title="{% if grav.twig.twig.filters['tu'] is defined %}{{ field.validate.message|tu|e }}{% else %}{{ field.validate.message|t|e }}{% endif %}"{% endif %}
+                {% if field.rows is defined %}rows="{{ field.rows }}"{% endif %}
+                {% if field.cols is defined %}cols="{{ field.cols }}"{% endif %}
+            {% endblock %}
+            >{{ value|trim|e('html') }}</textarea>
+    </div>
+{% endblock %}
 
 # DeepTurn Ltd - Social Automation
 
